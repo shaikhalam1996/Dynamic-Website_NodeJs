@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <div class="main">
+        <div class="center">
+            <input type="text" id="title">
+            <textarea id="desp"></textarea>
+        
+             <button id="btn" onclick="add()">Add Item</button>
+             <table>
+                 <th> Sr No </th>
+                 <th>Title</th>
+                 <th>Description</th>
+                 <th>Delete</th>
+                </tr>
+                <tr id="Tdata"></tr>
+             </table>
+        </div>
+    </div>
+    <script>
+        let title = document.getElementById("title");
+        let desp = document.getElementById("desp");
+        let btn = document.getElementById("btn");
+        let obj ={};
+
+        function add(){
+             obj.tit = title.value;
+             obj.des =desp.value;
+
+             let arr= [obj];
+
+             let arrData = arr.map((value,index)=>{
+                 let str = `
+                 <th> ${index + 1}</th>
+                 <th>${value.tit}</th>
+                 <th>${value.des}</th>
+                 <th>Delete</th>
+                 `
+                 
+                 Tdata = document.getElementById("Tdata");
+                 Tdata.innerHTML = str
+             })
+             
+             add();
+            //  console.log(arrData);
+        }
+
+    </script>
+</body>
+</html>

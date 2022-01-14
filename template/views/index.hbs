@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link  rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<body>
+    
+    {{>navbar}}
+
+    {{>home}}
+
+    {{>about}}
+
+        <iframe  class="mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60342.02060937257!2d72.86619865038844!3d19.047186431987505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5ede708d39d%3A0xd81ae764fa3f136d!2sChembur%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1618180623926!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         
+         <section id="contact">
+          <h1 class="text-center mt-5">Contact Us</h1>
+          <div class="container">
+              <div class="col-lg-8 col-md-8 col-sm-10 mx-auto">
+                <form action="/contact">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" placeholder="Enter Name" autocomplete="off" >
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile</label>
+                    <input type="text" class="form-control" name="mobile" placeholder="Enter Mobile">
+                </div>
+                <div class="form-group">
+                    <label for="address">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" name="address" placeholder="Enter Address">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Message</label>
+                    <textarea class="form-control" name="message" placeholder="Enter Message"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-danger">Submit</button>
+                </form>
+                </div>
+            </div>
+            </section>
+    <script src="bootstrap.js" type="text/javascript"></script>
+    {{!-- <script src="jquery.js" type="text/javascript"></script> --}}
+</body>
+</html>

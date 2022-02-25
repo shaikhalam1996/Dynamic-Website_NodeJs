@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-//require("./db/conn");
+require("./db/conn");
 const path = require("path");
 const hbs = require("hbs");
 const Userdata = require("./models/user");
